@@ -1,0 +1,32 @@
+# Mac
+.DS_Store
+
+#IDE Files
+.vscode
+.project
+.pydevproject
+.idea
+
+#Python cached files
+__pycache__
+
+# Logs
+logs
+*.log
+
+# Output directory
+output/
+
+#Compiled code files
+*.pyc
+
+#PyTest files
+.pytest_cache/
+
+#gcloud files
+.gcloudignore
+
+## Environment / Secret files
+.env
+.env.yaml
+keys/

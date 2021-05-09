@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from post import Post
 import requests
 
-posts = requests.get("https://api.npoint.io/5abcca6f4e39b4955965").json()
+posts = requests.get("https://api.npoint.io/4a3f4b3a3786d3b6bec8").json()
 post_objects = []
 for post in posts:
     post_obj = Post(post["id"], post["title"], post["subtitle"], post["body"])
@@ -27,5 +27,3 @@ def show_post(index):
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
